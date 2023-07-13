@@ -9,7 +9,9 @@
     list-style: none;
     font-family: 'Roboto', sans-serif;
 }
+
 /* --------- inicio navbar ---------- */
+
 .bg
 {
     background-color: #0B0C0C;
@@ -36,9 +38,10 @@
     color: #FBE134 !important;
 }
 
-/* --------- fin navbar ---------- */
+/* ---------- fin navbar ---------- */
 
 /* --------- inicio main ---------- */
+
 .containerInicio
 {
     display: flex;
@@ -105,7 +108,7 @@
     align-items: center;
     width: 60%; 
 }
-/* ----------- fin main ------------------- */
+/* -------------- fin main ---------------- */
 
 /*------------ inicio "novedades" --------- */
 .containerNovedades
@@ -165,7 +168,7 @@
 
 /* --------- fin "novedades" ---------- */
 
-/* --------- inicio "sumate al equipo" ---------- */
+/* ---- inicio "sumate al equipo" ----- */
 
 .sumateAlEquipo
 {
@@ -308,7 +311,7 @@
     outline: 3px solid white;
 }
 
-/* --------- fin de section "formulario" ---------- */
+/* -------- fin de "formulario" ---------- */
 
 /* --------- inicio de "footer" ---------- */
 
@@ -433,9 +436,9 @@
     transition: 0.2s;
 }
 
-/* ----------------fin del css de index.html----------------- */
+/* -------------- fin del css de index.html ------------------ */
 
-/*--------------- inicio del css de nosotros.html------------ */
+/*-------------- inicio del css de nosotros.html ------------- */
 
 .somos-elnuevohomero
 {
@@ -560,6 +563,10 @@
     padding-bottom: 20px;
 }
 
+/* --------- fin de main ---------- */
+
+/* ---- inicio de "nuestro-desafio" ---- */
+
 .nuestro-desafio
 {
     background-color: #FBE134;
@@ -616,6 +623,10 @@
     margin-right: 30px;
     font-size: 25px;
 }
+
+/* ---- fin de "en-rodriguez125" ----- */
+
+/* -------- inicio de "main" --------- */
 
 .resto-de-sucursales
 {
@@ -674,9 +685,9 @@
     padding-left: 0px;
 }
 
-/* ----------- fin del css de servicios.html -------------*/
+/* ------------ fin del css de servicios.html ------------------*/
 
-/* ----------- inicio del css de sucursales.html -------------*/
+/* ----------- inicio del css de sucursales.html ---------------*/
 
 .nuestras-sucursales
 {
@@ -782,9 +793,9 @@
     margin-left: 10px;
 }
 
-/* ----------- fin del css de sucursales.html -------------*/
+/* -------------- fin del css de sucursales.html ---------------*/
 
-/* ------- inicio de mediaquaries 1024|768|480|320 --------*/
+/* --------- inicio de mediaquaries 1024|768|480|320 -----------*/
 
 @media (max-width:1024px)
 {
@@ -912,9 +923,9 @@
     padding: 10px;
 }
 
-/* fin de media1024px de index.html */
+/* --- fin de media1024px de index.html --- */
 
-/* inicio de media1024px de nosotros.html */
+/* --- inicio de media1024px de nosotros.html --- */
 
 .somos-elnuevohomero
 {
@@ -951,9 +962,9 @@
 {
     margin-left: 0px;
 }
-/* fin de media1024px de nosotros.html */
+/* --- fin de media1024px de nosotros.html --- */
 
-/* inicio de media1024px de sucursales.html */
+/* --- inicio de media1024px de sucursales.html --- */
 
 .nuestras-sucursales
 {
@@ -997,12 +1008,11 @@
     height: 201px;
 }
 
-/* fin de media1024px de sucursales.html */
+/* --- fin de media1024px de sucursales.html --- */
 
 }
 
-
-/* ------------------------------------------------------ */
+/* ----------------------------------------------------------- */
 
 @media (max-width:768px) 
 {    
@@ -1137,9 +1147,9 @@
     font-size: 30px;
 }
 
-/* fin de media768px de index.html */
+/* --- fin de media768px de index.html --- */
 
-/* inicio de media768px de nosotros.html */
+/* --- inicio de media768px de nosotros.html  --- */
 
 .nuestra-mision, .nuestra-vision
 {
@@ -1155,9 +1165,9 @@
     margin-left: 20px;
 }
 
-/* fin de media768px de nosotros.html */
+/* --- fin de media768px de nosotros.html  --- */
 
-/* inicio de media768px de servicios.html */
+/* --- inicio de media768px de servicios.html --- */
 
 .resto-de-sucursales h2
 {
@@ -1166,20 +1176,20 @@
     padding-bottom: 60px;
 }
 
-/* fin de media768px de servicios.html */
+/* --- fin de media768px de servicios.html --- */
 
-/* inicio de media768px de sucursales.html */
+/* --- inicio de media768px de sucursales.html --- */
 
 .infoSucursal h3
 {
     font-size: 55px;
 }
 
-/* fin de media768px de sucursales.html */
+/* --- fin de media768px de sucursales.html --- */
 
 }
 
-/* ------------------------------------------------------ */
+/* ------------------------------------------------------------ */
 
 @media (max-width: 480px) 
 {
@@ -1212,9 +1222,9 @@
     margin-right: 10px;
 }
 
-/* fin de media480px de index.html */
+/* --- fin de media480px de index.html --- */
 
-/* inicio de media480px de nosotros.html */
+/* --- inicio de media480px de nosotros.html --- */
 
 .nuestra-mision
 {
@@ -1257,9 +1267,9 @@
     font-size: 40px;
 }
 
-/* fin de media480px de nosotros.html */
+/* --- fin de media480px de nosotros.html --- */
 
-/* inicio de media480px de sucursales.html */
+/* --- inicio de media480px de sucursales.html --- */
 
 .nuestras-sucursales h1
 {
@@ -1292,11 +1302,11 @@
     font-size: 40px;
 }
 
-/* fin de media480px de sucursales.html */
+/* --- fin de media480px de sucursales.html --- */
 
 }
 
-/* ------------------------------------------------------ */
+/* ------------------------------------------------------------ */
 
 @media (max-width: 320px) 
 {
@@ -1344,9 +1354,9 @@
     padding: 10px;
 }
 
-/* fin de media320px de index.html */
+/* --- fin de media320px de index.html --- */
 
-/* inicio de media320px de nosotros.html */
+/* --- inicio de media320px de nosotros.html --- */
 
 .infoEnh h1
 {
@@ -1364,9 +1374,10 @@
     font-size: 30px;
 } 
 
-/* fin de media320px de nosotros.html */
+/* --- fin de media320px de nosotros.html --- */
 
-/* inicio de media320px de servicios.html */
+/* --- inicio de media320px de servicios.html --- */
+
 .nuestros-servicios h1 
 {
     font-size: 70px;
@@ -1387,9 +1398,9 @@
     font-size: 16px;
 }
 
-/* fin de media320px de servicios.html */
+/* --- fin de media320px de servicios.html --- */
 
-/* inicio de media320px de sucursales.html */
+/* --- inicio de media320px de sucursales.html --- */
 
 .nuestras-sucursales h1
 {
@@ -1432,6 +1443,6 @@
     padding-left: 10px;
 }
 
-/* fin de media320px de sucursales.html */
+/* --- fin de media320px de sucursales.html --- */
 
 }
