@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,800&display=swap');
+
 /* inicio del css del index.html */
 *
 {
@@ -7,7 +8,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* --------- inicio navbar ---------- */
@@ -53,7 +54,7 @@
 }
 
 .infoInicio
-{
+{ 
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -63,10 +64,11 @@
 
 .infoInicio h1
 {
-    font-weight: bold;
-    font-size: 50px;
+    font-size: 46px;
     padding-top: 50px;
     margin-left: 30px;
+    font-weight: 800;
+    font-style: italic;
 }
 
 .infoInicio p
@@ -74,6 +76,7 @@
     font-size: 24px;
     margin-left: 10px;
     padding: 20px;
+
 }
 
 .infoInicio button a
@@ -121,10 +124,11 @@
 .infoNovedades h2
 {
     text-align: center;
-    font-weight: bold;
     font-size: 50px;
     padding-top: 50px;
     margin-bottom: 30px;
+    font-weight: 800;
+    font-style: italic;
 }
 
 .infoNovedades p
@@ -189,9 +193,10 @@
 {
     color: rgb(0, 0, 0);
     font-size: 45px;
-    font-weight: bold;
     padding-top: 40px;
     margin-left: 30px; 
+    font-weight: 800;
+    font-style: italic;
 }
 
 .infoSae p
@@ -264,6 +269,7 @@
 
 .dato label
 {
+    font-weight: bold;
     padding: 5px;
     font-size: 20px;
 }
@@ -342,8 +348,8 @@
 
 .logo-footer span
 {
-    font-size: 15px;
-    padding: 13px 0 0 10px;
+    font-size: 13px;
+    padding: 13px 0 0 13px;
     color: white;
 }
 
@@ -355,6 +361,7 @@
     color: white;
     border-bottom: 2px solid #FBE134;
     border-radius: 2px;
+    font-weight: bold;
 }
 
 .links-rapidos
@@ -468,6 +475,8 @@
     font-weight: bold;
     padding-top: 100px;
     margin-left: 30px;
+    font-weight: 800;
+    font-style: italic;
 }
 
 .infoEnh p
@@ -531,6 +540,7 @@
     padding-left: 30px;
     padding-bottom: 60px;
     margin-bottom: -1rem;
+    
 }
 
 .nuestros-valores img
@@ -561,6 +571,7 @@
     font-size: 25px;
     padding: 20px;
     padding-bottom: 20px;
+    
 }
 
 /* --------- fin de main ---------- */
@@ -576,9 +587,11 @@
 {
     margin-bottom: -0.5rem;
     text-align: center;
-    font-weight: bold;
     font-size: 70px;
     padding: 70px;
+    font-weight: 800;
+    font-style: italic;
+    text-transform: uppercase;
 }
 
 /* ----------- fin del css de nosotros.html -------------*/
@@ -595,10 +608,11 @@
 
 .nuestros-servicios h1
 {
-    font-size: 100px;
-    font-weight: bold;
+    font-size: 90px;
     padding-top: 400px;
     margin-left: 20px;
+    font-weight: 800;
+    font-style: italic;
 }
 
 .en-rodriguez125
@@ -610,9 +624,11 @@
 {
     text-align: center;
     padding: 30px;
-    font-weight: bold;
     padding-top: 80px;
     font-size: 60px;
+    font-weight: 800;
+    font-style: italic;
+    text-transform: uppercase;
 }
 
 .en-rodriguez125 p
@@ -635,10 +651,12 @@
 
 .resto-de-sucursales h2
 {
-    font-weight: bold;
     text-align: center;
     font-size: 60px;
     padding: 80px;
+    font-weight: 800;
+    font-style: italic;
+    text-transform: uppercase;
 }
 
 .tarjetas-servicios
@@ -672,7 +690,8 @@
     color: #FBE134;
     text-align: center;
     font-size: 40px;
-    padding: 10px;
+    padding: 3px;
+    font-weight: 600;
 }
 
 .tarjeta p
@@ -698,11 +717,15 @@
 
 .nuestras-sucursales h1
 {
-    font-weight: bold;
-    font-size: 130px;
+    font-size: 100px;
     padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
+    color: white;
+    background-color:#2A2E34;
+    font-weight: 800;
+    font-style: italic;
+    text-transform: uppercase;
 }
 
 .sucursal
@@ -751,10 +774,10 @@
 
 .infoSucursal h3
 {
-    font-weight: bold;
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
     padding-bottom: 30px;
+    font-weight: 600;
 }
 
 .direccionSucursal
@@ -1269,11 +1292,20 @@
 
 /* --- fin de media480px de nosotros.html --- */
 
+/* --- inicio de media480px de servicios.html --- */
+
+.nuestros-servicios h1
+{
+    font-size: 70px;
+}
+
+/* --- fin de media480px de servicios.html --- */
+
 /* --- inicio de media480px de sucursales.html --- */
 
 .nuestras-sucursales h1
 {
-    font-size: 90px;
+    font-size: 65px;
 }
 
 .imgSucursal img
@@ -1321,9 +1353,14 @@
     height: 200px;
 }
 
+.infoNovedades h2
+{
+    font-size: 40px;
+}
+
 .infoNovedades p
 {
-    font-size: 19px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -1360,7 +1397,7 @@
 
 .infoEnh h1
 {
-    font-size: 70px;
+    font-size: 50px;
 }
 
 .imgEnh img
@@ -1380,7 +1417,17 @@
 
 .nuestros-servicios h1 
 {
-    font-size: 70px;
+    font-size: 50px;
+}
+
+.en-rodriguez125 h2
+{
+    font-size: 40px;
+}
+
+.resto-de-sucursales h2
+{
+    font-size: 40px;
 }
 
 .tarjeta
@@ -1404,7 +1451,7 @@
 
 .nuestras-sucursales h1
 {
-    font-size: 50px;
+    font-size: 42px;
 }
 
 .imgSucursal img
@@ -1430,10 +1477,10 @@
 
 .infoSucursal h3
 {
-    font-size: 27px;
+    font-size: 25px;
 }
 
-.infoSucursal span, p
+.infoSucursal span, .infoSucursal p
 {
     padding-left: 10px;
 }
