@@ -1,0 +1,271 @@
+/*--- inicio de section "novedades" index.html --- */
+
+.containerNovedades {
+
+    display: flex;
+    flex-direction: column;
+    background-color: $color-fondo;
+
+    .infoNovedades {
+
+        text-align: center;
+        margin-bottom: 30px;
+
+        h2 { 
+        font-size: 50px;        
+        padding-top: 50px;
+        @extend %bd-fontStyle ;
+        }
+
+        p {
+        font-size: 25px;
+        }
+
+    }
+
+    .novedadesImg {
+    
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 40px;
+
+        img {
+        width: 450px;
+        height: 500px;
+        border: 7px solid $bc-color-basic;
+        border-radius: 5%;
+        &:hover {
+            animation: novedades 0.7s ease forwards;
+                @keyframes novedades {
+                    0% {
+                    transform: scale(1);
+                    }
+
+                    100% {
+                    transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* -- fin de section "novedades" index.html -- */
+
+/* ---- inicio section "formulario" index.html ----- */
+
+.sumateAlEquipo {
+
+    display: flex;
+    width: 100%;
+    background-color: $bc-color-basic;
+
+    .infoSae {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: -10px;
+
+        h2 {
+        color: rgb(0, 0, 0);
+        font-size: 45px;
+        padding-top: 40px;
+        margin-left: 30px; 
+        @extend %bd-fontStyle ;
+        }
+
+        p {
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        padding: 20px;
+        margin-left: 10px;
+        }
+
+    }
+
+    form {
+        display: grid;
+        padding: 50px;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        width: 50%;
+        align-items: end;
+        font-size: 18px;
+
+        .saeNombre {
+        grid-column: 1/2;
+        }
+
+        .saeEmail {
+        grid-column: 3/4;
+        }
+
+        .saeTelefono {
+        grid-column: 1/2;
+        }
+
+        .saeResidencia {
+        grid-column: 3/4;
+        }
+
+        .boton {
+        grid-column: 3/4;
+        margin-left: 110px;
+
+            button {
+                @include boton (0px,0px,0px,white,#e8e8e8);
+            }
+        }
+
+        .dato {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+
+            label {
+                font-weight: bold;
+                padding: 5px;
+                font-size: 20px;
+            }
+
+            input {
+                background-color: #f1f1f1e4;
+                width: 300px;
+                height: 30px;
+                border: none;
+                border-radius: 7px;
+                padding: 5px;
+                &:focus {
+                    outline: 3px solid rgb(255, 255, 255);
+                }
+            }
+        }
+        
+        select {
+            width: 150px;
+            height: 30px;
+            border: none;
+            border-radius: 7px;
+            padding: 5px;
+            &:focus {
+                outline: 3px solid rgb(255, 255, 255);
+            }
+        }
+
+        textarea {
+            background-color: #f1f1f1e4;
+            border: none;
+            border-radius: 7px;
+            padding: 10px;
+            &:focus {
+                outline: 3px solid white;
+            }
+        }
+    }
+}
+
+/* ---- fin de section "formulario" index.html ---- */
+
+/* -------- inicio de section "enh" nosotros.html -------- */
+
+.somos-elnuevohomero {
+
+    display: flex;
+    width: 100%;
+    background-color: $color-fondo;
+    padding-top: 80px;
+
+    .infoEnh {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+            padding-top: 100px;
+            margin-left: 30px;
+            @extend %bd-fontStyle ;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 24px;
+            margin-left: 10px;
+            padding: 20px;
+        }
+
+    }
+
+    .imgEnh {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-left: 40px;
+            width: 600px;
+            height: 600px;
+        }
+    }
+
+}
+
+/* ---- fin de section "enh" nosotros.html ---- */
+
+/* --- inicio de section "nuestro-desafio" nosotros.html --- */
+
+.nuestro-desafio {
+    background-color: $bc-color-basic;
+
+    h2 {
+        margin-bottom: -0.5rem;
+        text-align: center;
+        font-size: 70px;
+        padding: 70px;
+        @extend %bd-fontStyle ;
+        text-transform: uppercase;
+    }
+}
+
+/* -- fin de section "nuestro-desafio" nosotros.html -- */
+
+/* --- inicio de section "nuestros-servicios" servicios.html --- */
+
+.nuestros-servicios {
+
+    background-image: url(../multimedia/img/posicion\ de\ imagen\ ejemplo.png);
+    display: flex;
+    width: 100%;
+    background-size: cover;
+
+    h1 {
+        font-size: 90px;
+        padding-top: 400px;
+        margin-left: 20px;
+        @extend %bd-fontStyle ;
+    }
+}
+
+.en-rodriguez125 {
+    background-color: $color-fondo;
+
+    h2 {
+        text-align: center;
+        padding: 30px;
+        padding-top: 80px;
+        font-size: 60px;
+        @extend %bd-fontStyle ;
+        text-transform: uppercase;
+    }
+
+    p {
+        text-align: center;
+        padding-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 25px;
+    }
+}
+
+/* --- fin de section "nuestros-servicios" servicios.html --- */

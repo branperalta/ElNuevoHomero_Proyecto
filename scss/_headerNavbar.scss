@@ -1,0 +1,23 @@
+
+/* --------- inicio de headerNavbar ---------- */
+
+.bg {
+
+    background-color: #0B0C0C;
+
+    img {
+        width: 200px;
+    }
+    
+    a {
+        color: #FBE134 !important;
+        &:hover {
+        transition: 0.1s;
+        color: #ffffff !important;
+        }
+    }
+
+    button {
+        color: #FBE134 !important;
+    }
+}

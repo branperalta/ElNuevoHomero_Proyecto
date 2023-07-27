@@ -1,0 +1,15 @@
+@mixin boton ($pddg,$m-left,$m-bttm,$bg-color,$hvr-color) 
+{
+    width: 150px;
+    height: 50px;
+    padding: $pddg;
+    font-size: 16px;
+    margin-left: $m-left;
+    margin-bottom: $m-bttm;
+    background-color: $bg-color;
+    border-radius: 7px;
+    &:hover {
+    transition: 0.1s;
+    background-color: $hvr-color;
+}
+}

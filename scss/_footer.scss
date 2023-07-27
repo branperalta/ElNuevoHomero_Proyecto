@@ -1,0 +1,174 @@
+
+/* --------- inicio de footer ---------- */
+
+.pie-de-pagina {
+    background-color: #0B0C0C;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+
+    h3 {
+        font-size: 30px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        color: white;
+        border-bottom: 2px solid $bc-color-basic;
+        border-radius: 2px;
+        font-weight: bold;
+    }
+
+    .logo-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 12px;
+
+        img {
+            padding-bottom: 10px;
+            margin-left: 10px;
+            height: 100px;
+            width: 160px;
+        }
+
+        span {
+            font-size: 13px;
+            padding: 13px 0 0 13px;
+            color: white;
+        }
+
+    }
+
+    .links-rapidos {
+        display: flex;
+        flex-direction: column;
+
+        ul {
+            margin-left: -2rem;
+            /* unica forma de sacar el estilo agregado x bootstrap que me tiraba
+            los links muy a la derecha*/
+
+            li {
+                display: flex;
+                justify-content: start;
+                margin-left: 5px;
+
+                a {
+                    color: $bc-color-basic ;
+                    font-size: 20px;
+                    padding: 6px;
+                    text-decoration: none;
+                    &:hover {
+                        color: #bba200;
+                        transition: 0.1s;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .contacto {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            display: flex;
+            justify-content: end;
+            margin-right: 30px;
+        }
+
+        a {
+            color: white;
+            justify-content: end;
+            display: flex;
+            margin-top: 9px;
+            padding-bottom: 5px;
+            margin-right: 17px;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+    }
+
+    .redesSociales {
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+
+        i {
+            padding: 10px 15px 0 0;
+            color: $bc-color-basic;
+            &:hover {
+                color: white;
+                transition: 0.2s;
+            }
+        }
+
+    }
+
+}
+
+
+/* --------- inicio media 768px footer ---------- */
+
+
+@media (max-width:768px) 
+{
+
+.pie-de-pagina {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    h3 {
+        font-size: 40px;
+        border-style: none;
+        padding-left: 20px;
+        padding-top: 40px;
+    }
+
+    .logo-footer {
+        display: flex;
+        padding-top: 100px;
+
+        img {
+            height: 100px;
+            width: 200px;
+        }
+
+        span {
+            font-size: 17px;
+            padding: 13px 0 30px 10px;   
+        }
+    }
+    
+    .links-rapidos {
+        padding-top: 50px;
+
+        li {
+            padding-left: 20px;
+            font-size: 25px;
+        }
+    }
+
+    .contacto {
+        
+        .telDirecciones {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+    
+            span a {
+                padding-left: 27px;
+                font-size: 20px;
+            }
+        }
+    
+        i {
+            margin-top: 30px;
+            font-size: 50px;
+        }
+    }
+}
+}

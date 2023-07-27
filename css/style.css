@@ -1,1495 +1,1029 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,800&display=swap');
-
-/* inicio del css del index.html */
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* --------- inicio navbar ---------- */
-
-.bg
-{
-    background-color: #0B0C0C;
-}
-
-.bg a img
-{
-    width: 200px;
-}
-
-#btn a
-{
-    color: #FBE134 !important;
-}
-
-#btn a:hover
-{
-    transition: 0.1s;
-    color: #ffffff !important;
-}
-
-.bg button
-{
-    color: #FBE134 !important;
-}
-
-/* ---------- fin navbar ---------- */
-
-/* --------- inicio main ---------- */
-
-.containerInicio
-{
-    display: flex;
-    width: 100%;
-    padding-top: 40px;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #E9EAEC;
-}
-
-.infoInicio
-{ 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 30%;
-    margin: 15px;
-}
-
-.infoInicio h1
-{
-    font-size: 46px;
-    padding-top: 50px;
-    margin-left: 30px;
-    font-weight: 800;
-    font-style: italic;
-}
-
-.infoInicio p
-{
-    font-size: 24px;
-    margin-left: 10px;
-    padding: 20px;
-
-}
-
-.infoInicio button a
-{
-    text-decoration: none;
-    list-style: none;
-    color: #0B0C0C;
-}
-
-.infoInicio button
-{
-    width: 150px;
-    padding: 5px;
-    font-size: 15px;
-    margin-left: 30px;
-    margin-bottom: 20px;
-    padding: 12px;
-    background-color: #FBE134;
-    border-radius: 7px;
-}
-
-.infoInicio button:hover
-{
-    transition: 0.1s;
-    background-color: #bba200;
-}
-
-.imagenInicio
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60%; 
-}
-/* -------------- fin main ---------------- */
-
-/*------------ inicio "novedades" --------- */
-.containerNovedades
-{
-    display: flex;
-    flex-direction: column;
-    background-color: #E9EAEC;
-}
-
-.infoNovedades h2
-{
-    text-align: center;
-    font-size: 50px;
-    padding-top: 50px;
-    margin-bottom: 30px;
-    font-weight: 800;
-    font-style: italic;
-}
-
-.infoNovedades p
-{
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 30px;
-}
-
-.novedadesImg
-{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 30px;
-}
-
-.novedadesImg img
-{
-    width: 500px;
-    height: 400px;
-}
-
-.novedadesImg img:hover
-{
-    animation: novedades 0.7s ease forwards;
-}
-
-@keyframes novedades
-{
-    0%
-    {
-        transform: scale(1);
-    }
-
-    100%
-    {
-        transform: scale(1.1);
-    }
-}
-
-
-/* --------- fin "novedades" ---------- */
-
-/* ---- inicio "sumate al equipo" ----- */
-
-.sumateAlEquipo
-{
-    display: flex;
-    width: 100%;
-    background-color: #FBE134;
-}
-
-.infoSae
-{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: -10px;
-}
-
-.infoSae h2
-{
-    color: rgb(0, 0, 0);
-    font-size: 45px;
-    padding-top: 40px;
-    margin-left: 30px; 
-    font-weight: 800;
-    font-style: italic;
-}
-
-.infoSae p
-{
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-    padding: 20px;
-    margin-left: 10px;    
-}
-
-.saeFormulario form
-{
-    display: grid;
-    padding: 50px;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20px;
-    width: 50%;
-    align-items: end;
-    font-size: 18px;
-
-}
-
-.saeNombre
-{
-    grid-column: 1/2;
-}
-
-.saeEmail
-{
-    grid-column: 3/4;
-}
-
-.saeTelefono
-{
-    grid-column: 1/2;
-}
-
-.saeResidencia
-{
-    grid-column: 3/4;
-}
-
-.boton
-{
-    grid-column: 3/4;
-    margin-left: 110px;
-}
-
-.boton button
-{
-    background-color: white;
-    width: 150px;
-    height: 50px;
-    border-radius: 7px;
-    font-size: 18px;
-}
-
-.boton button:hover
-{
-    background-color: #e8e8e8;
-    transition: 0.1s;
-}
-
-.dato
-{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-
-.dato label
-{
-    font-weight: bold;
-    padding: 5px;
-    font-size: 20px;
-}
-
-.dato input
-{
-    background-color: #f1f1f1e4;
-    width: 300px;
-    height: 30px;
-    border: none;
-    border-radius: 7px;
-    padding: 5px;
-}
-
-.dato input:focus
-{
-    outline: 3px solid rgb(255, 255, 255);
-}
-
-.saeResidencia select
-{
-    background-color: #f1f1f1e4;
-    width: 150px;
-    height: 30px;
-    border: none;
-    border-radius: 7px;
-    padding: 5px;
-}
-
-.saeResidencia select:focus
-{
-    outline: 3px solid rgb(255, 255, 255);
-}
-
-.saeDescripcion textarea
-{
-    background-color: #f1f1f1e4;
-    border: none;
-    border-radius: 7px;
-    padding: 10px;
-}
-
-.saeDescripcion textarea:focus
-{
-    outline: 3px solid white;
-}
-
-/* -------- fin de "formulario" ---------- */
-
-/* --------- inicio de "footer" ---------- */
-
-.pie-de-pagina
-{
-    background-color: #0B0C0C;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 30px;
-}
-
-.logo-footer
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 12px;
-}
-
-.logo-footer img
-{
-    padding-bottom: 10px;
-    margin-left: 10px;
-    height: 70px;
-    width: 160px;
-}
-
-.logo-footer span
-{
-    font-size: 13px;
-    padding: 13px 0 0 13px;
-    color: white;
-}
-
-.pie-de-pagina h3
-{
-    font-size: 30px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    color: white;
-    border-bottom: 2px solid #FBE134;
-    border-radius: 2px;
-    font-weight: bold;
-}
-
-.links-rapidos
-{
-    display: flex;
-    flex-direction: column;
-}
-
-.links-rapidos ul
-{
-    margin-left: -2rem;
-    /* unica forma de sacar el estilo agregado x bootstrap que me tiraba
-    los links muy a la derecha*/
-}
-
-.links-rapidos ul li
-{
-    display: flex;
-    justify-content: start;
-    margin-left: 5px;
-}
-
-.links-rapidos ul li a
-{
-    color: #FBE134;
-    font-size: 20px;
-    padding: 6px;
-    text-decoration: none;
-}
-
-.links-rapidos ul li a:hover
-{
-    color: #bba200;
-    transition: 0.1s;
-}
-
-.contacto
-{
-    display: flex;
-    flex-direction: column;
-}
-
-.telDirecciones h3
-{
-    display: flex;
-    justify-content: end;
-    margin-right: 30px;
-}
-
-
-.telDirecciones span a
-{
-    color: white;
-    justify-content: end;
-    display: flex;
-    margin-top: 9px;
-    padding-bottom: 5px;
-    margin-right: 17px;
-    font-size: 15px;
-    text-decoration: none;
-}
-
-.redesSociales
-{
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.redesSociales span a i
-{
-    padding: 10px 15px 0 0;
-    color: #FBE134;
-}
-
-.redesSociales span a i:hover
-{
-    color: white;
-    transition: 0.2s;
-}
-
-/* -------------- fin del css de index.html ------------------ */
-
-/*-------------- inicio del css de nosotros.html ------------- */
-
-.somos-elnuevohomero
-{
-    display: flex;
-    width: 100%;
-    background-color: #E9EAEC;
-    padding-top: 80px;
-}
-
-.infoEnh
-{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    padding-left: 30px;
-}
-
-.imgEnh
-{
-    display: flex;
-    align-items: center;
-}
-
-.infoEnh h1
-{
-    font-size: 50px;
-    font-weight: bold;
-    padding-top: 100px;
-    margin-left: 30px;
-    font-weight: 800;
-    font-style: italic;
-}
-
-.infoEnh p
-{
-    font-size: 24px;
-    margin-left: 10px;
-    padding: 20px;
-}
-
-.imgEnh img
-{
-    margin-left: 190px;
-    width: 400px;
-    height: 400px;
-}
-
-.nuestros-vmv
-{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: -1rem;
-    padding-top: 150px;
-    background-color: #E9EAEC;
-}
-
-.nuestra-mision
-{
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.nuestros-valores
-{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-
-}
-
-.nuestra-vision
-{
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.nuestra-mision img
-{
-    width: 250px;
-    height: 270px;
-    padding-bottom: 40px;
-    margin-left: 40px;
-}
-
-.nuestra-mision p
-{
-    font-size: 25px;
-    padding-left: 30px;
-    padding-bottom: 60px;
-    margin-bottom: -1rem;
-    
-}
-
-.nuestros-valores img
-{
-    width: 250px;
-    height: 270px;
-    margin-right: 40px;
-    padding-bottom: 40px;
-}
-
-.nuestros-valores ul li 
-{
-    font-size: 25px;
-    padding-right: 30px;
-    list-style-type: disc;
-}
-
-.nuestra-vision img
-{
-    width: 250px;
-    height: 270px;
-    padding-bottom: 40px;
-    margin-left: 40px;
-}
-
-.nuestra-vision p
-{
-    font-size: 25px;
-    padding: 20px;
-    padding-bottom: 20px;
-    
-}
-
-/* --------- fin de main ---------- */
-
-/* ---- inicio de "nuestro-desafio" ---- */
-
-.nuestro-desafio
-{
-    background-color: #FBE134;
-}
-
-.nuestro-desafio h2
-{
-    margin-bottom: -0.5rem;
-    text-align: center;
-    font-size: 70px;
-    padding: 70px;
-    font-weight: 800;
-    font-style: italic;
-    text-transform: uppercase;
-}
-
-/* ----------- fin del css de nosotros.html -------------*/
-
-/* ----------- inicio del css de servicios.html -------------*/
-
-.nuestros-servicios
-{
-    background-image: url(../multimedia/img/posicion\ de\ imagen\ ejemplo.png);
-    display: flex;
-    width: 100%;
-    background-size: cover;
-}
-
-.nuestros-servicios h1
-{
-    font-size: 90px;
-    padding-top: 400px;
-    margin-left: 20px;
-    font-weight: 800;
-    font-style: italic;
-}
-
-.en-rodriguez125
-{
-    background-color: #E9EAEC;
-}
-
-.en-rodriguez125 h2
-{
-    text-align: center;
-    padding: 30px;
-    padding-top: 80px;
-    font-size: 60px;
-    font-weight: 800;
-    font-style: italic;
-    text-transform: uppercase;
-}
-
-.en-rodriguez125 p
-{
-    text-align: center;
-    padding-bottom: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
-    font-size: 25px;
-}
-
-/* ---- fin de "en-rodriguez125" ----- */
-
-/* -------- inicio de "main" --------- */
-
-.resto-de-sucursales
-{
-    background-color: #E9EAEC;
-}
-
-.resto-de-sucursales h2
-{
-    text-align: center;
-    font-size: 60px;
-    padding: 80px;
-    font-weight: 800;
-    font-style: italic;
-    text-transform: uppercase;
-}
-
-.tarjetas-servicios
-{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.tarjeta
-{
-    display: flex;
-    flex-direction: column;
-    width: 390px;
-    height: 460px;
-    margin-bottom: 30px;
-    background-color: #2A2E34;
-    border: 4px solid #FBE134;
-    border-radius: 2px;
-}
-
-.tarjeta img
-{
-    width: 330px;
-    margin: 10px 29px;
-    justify-content: center;
-}
-
-.tarjeta h3
-{
-    color: #FBE134;
-    text-align: center;
-    font-size: 40px;
-    padding: 3px;
-    font-weight: 600;
-}
-
-.tarjeta p
-{
-    color: white;
-    font-size: 17px;
-    text-align: center;
-    margin-left: 30px;
-    margin-right: 30px;
-    padding-left: 0px;
-}
-
-/* ------------ fin del css de servicios.html ------------------*/
-
-/* ----------- inicio del css de sucursales.html ---------------*/
-
-.nuestras-sucursales
-{
-    background-color: #E9EAEC;
-    display: flex;
-    flex-direction: column;
-}
-
-.nuestras-sucursales h1
-{
-    font-size: 100px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    text-align: center;
-    color: white;
-    background-color:#2A2E34;
-    font-weight: 800;
-    font-style: italic;
-    text-transform: uppercase;
-}
-
-.sucursal
-{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.imgSucursal
-{
-    padding-left: 30px;
-}
-
-.imgSucursal img
-{
-    width: 600px;
-    height: 570px;
-}
-
-.imgR125 img
-{
-    width: 600px;
-    height: 750px;
-}
-
-.infoSucursal
-{
-    width: 70%;
-    padding-top: 40px;
-}
-
-.infoSucursal span
-{
-    font-size: 25px;
-    display: flex;
-    padding: 6px;
-}
-
-.infoSucursal span, .infoSucursal p
-{
-    padding-left: 50px;
-}
-
-.infoSucursal h3
-{
-    font-size: 60px;
-    text-align: center;
-    padding-bottom: 30px;
-    font-weight: 600;
-}
-
-.direccionSucursal
-{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    padding-right: 20px;
-}
-
-.sucursal p
-{
-    font-size: 25px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-
-.infoSucursal .nombredato
-{
-    font-weight: bold;
-    padding-left: 40px;
-    padding-bottom: 10px;
-}
-
-.infoSucursal .nombreHorario
-{
-    border-bottom: 2px solid rgb(0, 0, 0);
-    border-radius: 1px;
-}
-
-.sucursal iframe
-{
-    width: 200px;
-    height: 100px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-}
-
-/* -------------- fin del css de sucursales.html ---------------*/
-
-/* --------- inicio de mediaquaries 1024|768|480|320 -----------*/
-
-@media (max-width:1024px)
-{
-.containerInicio
-{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.en-rodriguez125 h2, .nuestros-servicios h1, .nuestro-desafio h2, .somos-elnuevohomero .infoEnh h1, .sumateAlEquipo .infoSae h2, .containerNovedades .infoNovedades h2, .nuestras-sucursales h1, .resto-de-sucursales h2, .containerInicio .infoInicio h1 {
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* --------- inicio de headerNavbar ---------- */
+.bg {
+  background-color: #0B0C0C;
+}
+.bg img {
+  width: 200px;
+}
+.bg a {
+  color: #FBE134 !important;
+}
+.bg a:hover {
+  transition: 0.1s;
+  color: #ffffff !important;
+}
+.bg button {
+  color: #FBE134 !important;
+}
+
+/*------- inicio de main index.html ------*/
+.containerInicio {
+  display: flex;
+  width: 100%;
+  padding-top: 40px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E9EAEC;
+}
+.containerInicio .infoInicio {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 15px;
+}
+.containerInicio .infoInicio h1 {
+  font-size: 46px;
+  padding-top: 50px;
+  margin-left: 30px;
+}
+.containerInicio .infoInicio p {
+  font-size: 24px;
+  margin-left: 10px;
+  padding: 20px;
+}
+.containerInicio .infoInicio button {
+  width: 150px;
+  height: 50px;
+  padding: 5px;
+  font-size: 16px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  background-color: #FBE134;
+  border-radius: 7px;
+}
+.containerInicio .infoInicio button:hover {
+  transition: 0.1s;
+  background-color: #bba200;
+}
+.containerInicio .infoInicio button a {
+  text-decoration: none;
+  list-style: none;
+  color: #0B0C0C;
+}
+.containerInicio .imagenInicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.containerInicio .imagenInicio img {
+  height: 500px;
+  border: 7px solid #FBE134;
+}
+
+/*-------- fin de main index.html -------------*/
+/*----------- inicio de main nosotros.html -----------*/
+.nuestros-vmv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -1rem;
+  padding-top: 150px;
+  background-color: #E9EAEC;
+}
+.nuestros-vmv img {
+  height: 400px;
+  padding-bottom: 40px;
+  margin-left: 40px;
+}
+.nuestros-vmv .nuestra-mision {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.nuestros-vmv .nuestra-mision p {
+  font-size: 25px;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+.nuestros-vmv .nuestros-valores {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.nuestros-vmv .nuestros-valores img {
+  margin-right: 40px;
+}
+.nuestros-vmv .nuestros-valores ul li {
+  font-size: 25px;
+  padding-right: 30px;
+  list-style-type: disc;
+}
+.nuestros-vmv .nuestra-vision {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.nuestros-vmv .nuestra-vision p {
+  font-size: 25px;
+  padding: 20px;
+  padding-bottom: 20px;
+}
+
+/*--------- fin de main nosotros.html ---------*/
+/*---------- inicio de main servicios.html -------------*/
+.resto-de-sucursales {
+  background-color: #E9EAEC;
+}
+.resto-de-sucursales h2 {
+  text-align: center;
+  font-size: 60px;
+  padding: 80px;
+  text-transform: uppercase;
+}
+
+.tarjetas-servicios {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.tarjetas-servicios .tarjeta {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  height: 460px;
+  margin-bottom: 30px;
+  background-color: #2A2E34;
+  border: 4px solid #FBE134;
+  border-radius: 2px;
+}
+.tarjetas-servicios .tarjeta img {
+  width: 100%;
+  justify-content: center;
+}
+.tarjetas-servicios .tarjeta h3 {
+  color: #FBE134;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10px;
+  padding: 3px;
+  font-weight: 600;
+}
+.tarjetas-servicios .tarjeta p {
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-left: 0px;
+}
+
+/*-------- fin de main servicios.html ------------*/
+/*---------- inicio de main sucursales.html -----------*/
+.nuestras-sucursales {
+  background-color: #E9EAEC;
+  display: flex;
+  flex-direction: column;
+}
+.nuestras-sucursales h1 {
+  font-size: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  color: white;
+  background-color: #2A2E34;
+  text-transform: uppercase;
+}
+
+.sucursal {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.sucursal .imgR125 img {
+  width: 600px;
+  height: 750px;
+}
+.sucursal img {
+  padding-left: 30px;
+  width: 600px;
+  height: 570px;
+}
+.sucursal iframe {
+  width: 200px;
+  height: 100px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.sucursal .infoSucursal {
+  width: 70%;
+  padding-top: 40px;
+}
+.sucursal .infoSucursal span {
+  font-size: 25px;
+  display: flex;
+  padding: 6px;
+  padding-left: 50px;
+}
+.sucursal .infoSucursal p {
+  padding-left: 50px;
+  font-size: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.sucursal .infoSucursal h3 {
+  font-size: 60px;
+  text-align: center;
+  padding-bottom: 30px;
+  font-weight: 600;
+}
+.sucursal .infoSucursal .direccionSucursal {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-right: 20px;
+}
+.sucursal .infoSucursal .nombredato {
+  font-weight: bold;
+  padding-left: 40px;
+  padding-bottom: 10px;
+}
+
+/*------ fin de main sucursales.html -------*/
+/*--- inicio de section "novedades" index.html --- */
+.containerNovedades {
+  display: flex;
+  flex-direction: column;
+  background-color: #E9EAEC;
+}
+.containerNovedades .infoNovedades {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.containerNovedades .infoNovedades h2 {
+  font-size: 50px;
+  padding-top: 50px;
+}
+.containerNovedades .infoNovedades p {
+  font-size: 25px;
+}
+.containerNovedades .novedadesImg {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+.containerNovedades .novedadesImg img {
+  width: 450px;
+  height: 500px;
+  border: 7px solid #FBE134;
+  border-radius: 5%;
+}
+.containerNovedades .novedadesImg img:hover {
+  animation: novedades 0.7s ease forwards;
+}
+@keyframes novedades {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* -- fin de section "novedades" index.html -- */
+/* ---- inicio section "formulario" index.html ----- */
+.sumateAlEquipo {
+  display: flex;
+  width: 100%;
+  background-color: #FBE134;
+}
+.sumateAlEquipo .infoSae {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: -10px;
+}
+.sumateAlEquipo .infoSae h2 {
+  color: rgb(0, 0, 0);
+  font-size: 45px;
+  padding-top: 40px;
+  margin-left: 30px;
+}
+.sumateAlEquipo .infoSae p {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  padding: 20px;
+  margin-left: 10px;
+}
+.sumateAlEquipo form {
+  display: grid;
+  padding: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  width: 50%;
+  align-items: end;
+  font-size: 18px;
+}
+.sumateAlEquipo form .saeNombre {
+  grid-column: 1/2;
+}
+.sumateAlEquipo form .saeEmail {
+  grid-column: 3/4;
+}
+.sumateAlEquipo form .saeTelefono {
+  grid-column: 1/2;
+}
+.sumateAlEquipo form .saeResidencia {
+  grid-column: 3/4;
+}
+.sumateAlEquipo form .boton {
+  grid-column: 3/4;
+  margin-left: 110px;
+}
+.sumateAlEquipo form .boton button {
+  width: 150px;
+  height: 50px;
+  padding: 0px;
+  font-size: 16px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  background-color: white;
+  border-radius: 7px;
+}
+.sumateAlEquipo form .boton button:hover {
+  transition: 0.1s;
+  background-color: #e8e8e8;
+}
+.sumateAlEquipo form .dato {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.sumateAlEquipo form .dato label {
+  font-weight: bold;
+  padding: 5px;
+  font-size: 20px;
+}
+.sumateAlEquipo form .dato input {
+  background-color: rgba(241, 241, 241, 0.8941176471);
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 7px;
+  padding: 5px;
+}
+.sumateAlEquipo form .dato input:focus {
+  outline: 3px solid rgb(255, 255, 255);
+}
+.sumateAlEquipo form select {
+  width: 150px;
+  height: 30px;
+  border: none;
+  border-radius: 7px;
+  padding: 5px;
+}
+.sumateAlEquipo form select:focus {
+  outline: 3px solid rgb(255, 255, 255);
+}
+.sumateAlEquipo form textarea {
+  background-color: rgba(241, 241, 241, 0.8941176471);
+  border: none;
+  border-radius: 7px;
+  padding: 10px;
+}
+.sumateAlEquipo form textarea:focus {
+  outline: 3px solid white;
+}
+
+/* ---- fin de section "formulario" index.html ---- */
+/* -------- inicio de section "enh" nosotros.html -------- */
+.somos-elnuevohomero {
+  display: flex;
+  width: 100%;
+  background-color: #E9EAEC;
+  padding-top: 80px;
+}
+.somos-elnuevohomero .infoEnh {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+.somos-elnuevohomero .infoEnh h1 {
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 100px;
+  margin-left: 30px;
+  text-transform: uppercase;
+}
+.somos-elnuevohomero .infoEnh p {
+  font-size: 24px;
+  margin-left: 10px;
+  padding: 20px;
+}
+.somos-elnuevohomero .imgEnh {
+  display: flex;
+  align-items: center;
+}
+.somos-elnuevohomero .imgEnh img {
+  margin-left: 40px;
+  width: 600px;
+  height: 600px;
+}
+
+/* ---- fin de section "enh" nosotros.html ---- */
+/* --- inicio de section "nuestro-desafio" nosotros.html --- */
+.nuestro-desafio {
+  background-color: #FBE134;
+}
+.nuestro-desafio h2 {
+  margin-bottom: -0.5rem;
+  text-align: center;
+  font-size: 70px;
+  padding: 70px;
+  text-transform: uppercase;
+}
+
+/* -- fin de section "nuestro-desafio" nosotros.html -- */
+/* --- inicio de section "nuestros-servicios" servicios.html --- */
+.nuestros-servicios {
+  background-image: url(../multimedia/img/posicion\ de\ imagen\ ejemplo.png);
+  display: flex;
+  width: 100%;
+  background-size: cover;
+}
+.nuestros-servicios h1 {
+  font-size: 90px;
+  padding-top: 400px;
+  margin-left: 20px;
+}
+
+.en-rodriguez125 {
+  background-color: #E9EAEC;
+}
+.en-rodriguez125 h2 {
+  text-align: center;
+  padding: 30px;
+  padding-top: 80px;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+.en-rodriguez125 p {
+  text-align: center;
+  padding-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 25px;
+}
+
+/* --- fin de section "nuestros-servicios" servicios.html --- */
+/*-------------------   inicio de medias 1024px   ---------------------*/
+@media (max-width: 1024px) {
+  .containerInicio {
     display: flex;
     flex-direction: column;
     width: 100%;
-}
-
-.infoInicio
-{
+  }
+  .containerInicio .infoInicio {
     align-items: center;
     display: flex;
     width: 100%;
-}
-
-.infoInicio h1
-{
+  }
+  .containerInicio .infoInicio h1 {
     margin-left: 0px;
-    text-align: center;    
-}
-
-.infoInicio p
-{
+    text-align: center;
+  }
+  .containerInicio .infoInicio p {
     margin-left: 0;
     text-align: center;
-}
-
-.infoInicio button
-{
+  }
+  .containerInicio .infoInicio button {
     margin-left: 0;
-}
-
-.imagenInicio img
-{
+  }
+  .containerInicio .imagenInicio img {
     display: flex;
     justify-content: center;
-    width: 1000px;
-    height: 700px;
+    width: 100%;
     margin-left: 0;
-}
-
-.novedadesImg
-{
+  }
+  .containerNovedades .infoNovedades p {
+    padding-top: 30px;
+  }
+  .containerNovedades .novedadesImg {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.novedadesImg img
-{
+  }
+  .containerNovedades .novedadesImg img {
     display: flex;
     margin: 30px;
-}
-
-.sumateAlEquipo 
-{
+  }
+  .sumateAlEquipo {
     display: flex;
     flex-direction: column;
-}
-
-.infoSae
-{
+  }
+  .sumateAlEquipo .infoSae {
     text-align: center;
     display: flex;
     width: 100%;
-}
-
-.saeFormulario
-{
+  }
+  .sumateAlEquipo .saeFormulario {
     display: flex;
     justify-content: center;
-}
-
-.saeFormulario form 
-{
-    width: 70%; 
+  }
+  .sumateAlEquipo .saeFormulario form {
+    width: 70%;
     margin: 0 auto;
     padding: 20px;
     grid-template-columns: 1fr;
     column-gap: 0;
-    align-items: center; 
-    font-size: 16px; 
-}
-
-.saeNombre, .saeEmail, .saeTelefono, .saeResidencia, .boton 
-{
+    align-items: center;
+    font-size: 16px;
+  }
+  .sumateAlEquipo .saeFormulario form .saeNombre, .sumateAlEquipo .saeFormulario form .saeEmail, .sumateAlEquipo .saeFormulario form .saeTelefono {
     width: 100%;
-    margin-left: 0; 
-}
-
-.boton
-{
+    margin-left: 0;
+  }
+  .sumateAlEquipo .saeFormulario form .boton {
     padding-left: 130px;
     padding-top: 150px;
-}
-
-.dato input
-{
-    background-color: #f1f1f1e4;
-    width: 320px;
-    height: 50px;
-    border: none;
-    border-radius: 7px;
-    padding: 5px;
-}
-
-.saeResidencia select
-{
-    background-color: #f1f1f1e4;
-    width: 200px;
-    height: 50px;
-    border: none;
-    border-radius: 7px;
-    padding: 5px;
-}
-
-.saeDescripcion textarea
-{
-    background-color: #f1f1f1e4;
+    width: 100%;
+    margin-left: 0;
+  }
+  .sumateAlEquipo .saeFormulario form textarea {
+    background-color: rgba(241, 241, 241, 0.8941176471);
     width: 320px;
     border: none;
     border-radius: 7px;
     padding: 10px;
-}
-
-/* --- fin de media1024px de index.html --- */
-
-/* --- inicio de media1024px de nosotros.html --- */
-
-.somos-elnuevohomero
-{
+  }
+  .sumateAlEquipo .saeFormulario form input {
+    background-color: rgba(241, 241, 241, 0.8941176471);
+    width: 320px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
+  }
+  .sumateAlEquipo .saeFormulario form .saeResidencia select {
+    background-color: rgba(241, 241, 241, 0.8941176471);
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
+  }
+  /*------ fin media 1024px index.html -------*/
+  /*------ inicio media 1024px nosotros.html -------*/
+  .nuestros-vmv .nuestros-valores ul {
+    padding-left: 50px;
+  }
+  .somos-elnuevohomero {
     flex-direction: column;
-}
-
-.infoEnh
-{
+  }
+  .somos-elnuevohomero .infoEnh {
     display: flex;
     width: 100%;
     text-align: center;
-}
-
-.infoEnh h1
-{
+  }
+  .somos-elnuevohomero .infoEnh h1 {
     margin-left: 0px;
     margin-right: 30px;
-}
-
-.infoEnh p
-{
+  }
+  .somos-elnuevohomero .infoEnh p {
     margin-left: 0px;
     margin-right: 20px;
-}
-
-.imgEnh
-{
+  }
+  .somos-elnuevohomero .imgEnh {
     display: flex;
     width: 100%;
     justify-content: center;
-}
-
-.imgEnh img
-{
-    margin-left: 0px;
-}
-/* --- fin de media1024px de nosotros.html --- */
-
-/* --- inicio de media1024px de sucursales.html --- */
-
-.nuestras-sucursales
-{
+  }
+  .somos-elnuevohomero .imgEnh img {
+    margin-left: -30px;
+    width: 500px;
+  }
+  /*------ fin media 1024px nosotros.html -------*/
+  /*------ inicio media 1024px sucursales.html -------*/
+  .nuestras-sucursales {
     background-color: #E9EAEC;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.sucursal
-{
+  }
+  .nuestras-sucursales .sucursal {
     width: 100%;
     display: flex;
     flex-direction: column;
     padding-top: 100px;
     padding-bottom: 100px;
-}
-
-.imgSucursal
-{
+  }
+  .nuestras-sucursales .sucursal .imgSucursal {
     padding-left: 0px;
-}
-
-.imgSucursal img
-{
+  }
+  .nuestras-sucursales .sucursal .imgSucursal img {
     width: 100%;
-}
-
-.infoSucursal
-{
+    height: 600px;
+    padding-left: 0px;
+  }
+  .nuestras-sucursales .sucursal .infoSucursal {
     width: 100%;
-}
-
-.direccionSucursal
-{
+  }
+  .nuestras-sucursales .sucursal .direccionSucursal {
     align-items: center;
-}
-.sucursal iframe
-{
+  }
+  .nuestras-sucursales .sucursal .direccionSucursal iframe {
     width: 600px;
     height: 201px;
+  }
 }
-
-/* --- fin de media1024px de sucursales.html --- */
-
-}
-
-/* ----------------------------------------------------------- */
-
-@media (max-width:768px) 
-{    
-.imagenInicio img
-{
+/*-------------------   inicio de medias 768px   ---------------------*/
+@media (max-width: 768px) {
+  .imagenInicio img {
     display: flex;
     justify-content: center;
-    width: 900px;
-    height: 500px;
+    width: 100%;
     margin-left: 0;
-}
-
-.saeFormulario form 
-{
+  }
+  .sumateAlEquipo .saeFormulario form {
     display: flex;
     flex-direction: column;
     width: 90%;
     margin: 0 auto;
     padding: 20px;
     font-size: 16px;
-}
-
-.saeNombre, .saeEmail, .saeTelefono, .saeDescripcion, .saeResidencia, .boton 
-{
+  }
+  .sumateAlEquipo .saeFormulario form .saeNombre, .sumateAlEquipo .saeFormulario form .saeEmail, .sumateAlEquipo .saeFormulario form .saeTelefono, .sumateAlEquipo .saeFormulario form .saeDescripcion, .sumateAlEquipo .saeFormulario form .saeResidencia, .sumateAlEquipo .saeFormulario form .boton {
     align-items: center;
     width: 100%;
     margin-left: 0;
     margin-bottom: 10px;
-}
-
-.boton 
-{
+  }
+  .sumateAlEquipo .saeFormulario form .boton {
     padding-left: 0;
-    padding-top: 0; 
-}
-
-.dato input
-{
-    background-color: #f1f1f1e4;
+    padding-top: 0;
+  }
+  .sumateAlEquipo .saeFormulario form input {
+    background-color: rgba(241, 241, 241, 0.8941176471);
     width: 320px;
     height: 50px;
     border: none;
     border-radius: 7px;
     padding: 5px;
-}
-
-.saeResidencia select
-{
-    background-color: #f1f1f1e4;
+  }
+  .sumateAlEquipo .saeFormulario form select {
+    background-color: rgba(241, 241, 241, 0.8941176471);
     width: 200px;
     height: 50px;
     border: none;
     border-radius: 7px;
     padding: 5px;
-}
-
-.saeDescripcion textarea
-{
-    background-color: #f1f1f1e4;
+  }
+  .sumateAlEquipo .saeFormulario form textarea {
+    background-color: rgba(241, 241, 241, 0.8941176471);
     width: 320px;
     border: none;
     border-radius: 7px;
     padding: 10px;
-}
-
-.pie-de-pagina
-{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-}
-
-.logo-footer
-{
-    display: flex;
-    padding-top: 100px;
-}
-
-.logo-footer img
-{
-    height: 100px;
-    width: 200px;
-}
-
-.logo-footer span
-{
-    font-size: 17px;
-    padding: 13px 0 30px 17px;   
-}
-
-.links-rapidos 
-{
-    padding-left: 20px;
-    padding-top: 50px;
-}
-
-.links-rapidos h3
-{
-    font-size: 40px;
-    border-style: none;
-}
-
-.links-rapidos ul li a
-{
-    font-size: 25px;
-}
-
-.contacto .telDirecciones
-{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-
-.telDirecciones h3
-{
-    font-size: 40px;
-    padding-left: 20px;
-    padding-top: 40px;
-    border-style: none;
-
-}
-
-.telDirecciones span
-{
-    padding-left: 27px;
-}
-
-.redesSociales
-{
-    padding-top: 50px;
-    font-size: 30px;
-}
-
-/* --- fin de media768px de index.html --- */
-
-/* --- inicio de media768px de nosotros.html  --- */
-
-.nuestra-mision, .nuestra-vision
-{
+  }
+  /*----- fin media 768px index.html ------*/
+  /*------ inicio media 768px nosotros.html -------*/
+  .nuestros-vmv .nuestra-mision {
     text-align: center;
-}
-
-.nuestra-mision p
-{
+  }
+  .nuestros-vmv .nuestra-vision {
+    text-align: center;
+  }
+  .nuestros-vmv p {
     padding-right: 30px;
-}
-.nuestros-valores li
-{
+  }
+  .nuestros-vmv .nuestros-valores li {
     margin-left: 20px;
-}
-
-/* --- fin de media768px de nosotros.html  --- */
-
-/* --- inicio de media768px de servicios.html --- */
-
-.resto-de-sucursales h2
-{
+  }
+  /*---- fin media 768px nosotros.html ----- */
+  /*------ inicio media 768px servicios.html -------*/
+  .resto-de-sucursales h2 {
     padding: 0px;
     padding-top: 60px;
     padding-bottom: 60px;
-}
-
-/* --- fin de media768px de servicios.html --- */
-
-/* --- inicio de media768px de sucursales.html --- */
-
-.infoSucursal h3
-{
+  }
+  /*------ fin media 768px servicios.html -------*/
+  /*------ inicio media 768px sucursales.html -------*/
+  .infoSucursal h3 {
     font-size: 55px;
+  }
 }
-
-/* --- fin de media768px de sucursales.html --- */
-
-}
-
-/* ------------------------------------------------------------ */
-
-@media (max-width: 480px) 
-{
-
-.imagenInicio img
-{
+/*-------------------   inicio de medias 480px   ---------------------*/
+@media (max-width: 480px) {
+  .imagenInicio img {
     display: flex;
     justify-content: center;
-    width: 450px;
-    height: 400px;
+    width: 100%;
     margin-left: 0;
-}  
-
-.infoNovedades p
-{
-    font-size: 23px;
-    text-align: center;
-}
-
-.novedadesImg img
-{
-    width: 450px;
-    height: 400px;
-    padding: 20px;
-    margin: 0px;
-}
-
-.infoSae h2
-{
+  }
+  .containerNovedades .novedadesImg img {
+    width: 25rem;
+  }
+  .sumateAlEquipo .infoSae h2 {
     margin-right: 10px;
-}
-
-/* --- fin de media480px de index.html --- */
-
-/* --- inicio de media480px de nosotros.html --- */
-
-.nuestra-mision
-{
-    flex-direction: column;
-}
-
-.nuestra-mision img
-{
+  }
+  /*---- fin media 480px index.html -----*/
+  /*------ inicio media 480px nosotros.html -------*/
+  .nuestros-vmv img {
+    width: 350px;
     margin-left: 0px;
-}
-
-.nuestros-valores
-{
+  }
+  .nuestros-vmv .nuestra-mision {
     flex-direction: column;
-}
-
-.nuestros-valores ul
-{
+  }
+  .nuestros-vmv .nuestros-valores {
+    display: flex;
+    flex-direction: column;
+  }
+  .nuestros-vmv .nuestros-valores ul {
     padding-bottom: 60px;
     margin-bottom: 0px;
-}
-
-.nuestros-valores img
-{
+  }
+  .nuestros-vmv .nuestros-valores img {
     margin-right: 0px;
-}
-
-.nuestra-vision
-{
+  }
+  .nuestros-vmv .nuestra-vision {
     flex-direction: column;
-}
-
-.nuestra-vision img
-{
-    margin-left: 0px;
-}
-
-.nuestro-desafio h2
-{
+  }
+  .nuestro-desafio h2 {
     font-size: 40px;
-}
-
-/* --- fin de media480px de nosotros.html --- */
-
-/* --- inicio de media480px de servicios.html --- */
-
-.nuestros-servicios h1
-{
+  }
+  /*---- fin media 480px nosotros.html -----*/
+  /*------ inicio media 480px servicios.html -------*/
+  .nuestros-servicios h1 {
     font-size: 70px;
-}
-
-/* --- fin de media480px de servicios.html --- */
-
-/* --- inicio de media480px de sucursales.html --- */
-
-.nuestras-sucursales h1
-{
+  }
+  /*----- fin media 480px servicios.html -----*/
+  /*------ inicio media 480px sucursales.html -------*/
+  .nuestras-sucursales h1 {
     font-size: 65px;
-}
-
-.imgSucursal img
-{
+  }
+  .nuestras-sucursales .sucursal .imgSucursal img {
     width: 100%;
     height: 300px;
-}
-
-.sucursal p 
-{
-    font-size: 20px;
-}
-
-.infoSucursal span
-{
-    font-size: 19px;
-}
-
-.sucursal iframe
-{
+  }
+  .nuestras-sucursales .sucursal .direccionSucursal iframe {
     width: 420px;
+  }
+  .nuestras-sucursales .sucursal .infoSucursal h3 {
+    font-size: 35px;
+  }
+  .nuestras-sucursales .sucursal .infoSucursal span {
+    font-size: 19px;
+  }
 }
-
-.infoSucursal h3
-{
-    font-size: 40px;
-}
-
-/* --- fin de media480px de sucursales.html --- */
-
-}
-
-/* ------------------------------------------------------------ */
-
-@media (max-width: 320px) 
-{
-    .bg a img
-{
+/*-------------------   inicio de medias 320px   ---------------------*/
+@media (max-width: 320px) {
+  .containerInicio .imagenInicio img {
+    height: 300px;
+  }
+  .bg a img {
     width: 120px;
-}
-
-.imagenInicio img
-{
-    width: 300px;
-    height: 200px;
-}
-
-.infoNovedades h2
-{
+  }
+  .containerNovedades .infoNovedades h2 {
     font-size: 40px;
-}
-
-.infoNovedades p
-{
-    font-size: 18px;
+  }
+  .containerNovedades .infoNovedades p {
     text-align: center;
-}
-
-.novedadesImg img
-{
+  }
+  .containerNovedades .novedadesImg img {
     width: 300px;
-    height: 200px;
-    padding: 20px;
-    margin: 0px;
-}
-
-.dato input
-{
-    background-color: #f1f1f1e4;
+    height: 300px;
+    margin: 10px;
+  }
+  .sumateAlEquipo .saeFormulario .dato input {
+    background-color: rgba(241, 241, 241, 0.8941176471);
     width: 300px;
     height: 50px;
     border: none;
     border-radius: 7px;
     padding: 5px;
-}
-
-.saeDescripcion textarea
-{
-    background-color: #f1f1f1e4;
+  }
+  .sumateAlEquipo .saeFormulario .saeDescripcion textarea {
+    background-color: rgba(241, 241, 241, 0.8941176471);
     width: 300px;
     border: none;
     border-radius: 7px;
     padding: 10px;
-}
-
-/* --- fin de media320px de index.html --- */
-
-/* --- inicio de media320px de nosotros.html --- */
-
-.infoEnh h1
-{
+  }
+  /* ---- fin media 320px index.html ---- */
+  /* ---- inicio media 320px nosotros.html ---- */
+  .somos-elnuevohomero .infoEnh h1 {
     font-size: 50px;
-}
-
-.imgEnh img
-{
+  }
+  .somos-elnuevohomero .imgEnh img {
     width: 300px;
     height: 300px;
-}
-
-.nuestro-desafio h2
-{
+    margin-left: 0px;
+  }
+  .nuestros-vmv img {
+    width: 200px;
+    height: 250px;
+  }
+  .nuestros-vmv .nuestros-valores img {
+    margin-right: 0px;
+  }
+  .nuestro-desafio h2 {
     font-size: 30px;
-} 
-
-/* --- fin de media320px de nosotros.html --- */
-
-/* --- inicio de media320px de servicios.html --- */
-
-.nuestros-servicios h1 
-{
+  }
+  /* --- fin media 320px nosotros.html --- */
+  /* --- inicio media 320px de servicios.html --- */
+  .nuestros-servicios h1 {
     font-size: 50px;
-}
-
-.en-rodriguez125 h2
-{
+  }
+  .en-rodriguez125 h2 {
     font-size: 40px;
-}
-
-.resto-de-sucursales h2
-{
+  }
+  .resto-de-sucursales h2 {
     font-size: 40px;
-}
-
-.tarjeta
-{
+  }
+  .tarjetas-servicios .tarjeta {
     width: 300px;
-}
-
-.tarjeta img
-{
-    width: 235px;
-}
-
-.tarjeta p
-{
+  }
+  .tarjetas-servicios .tarjeta p {
     font-size: 16px;
-}
-
-/* --- fin de media320px de servicios.html --- */
-
-/* --- inicio de media320px de sucursales.html --- */
-
-.nuestras-sucursales h1
-{
+  }
+  /* --- fin media 320px servicios.html --- */
+  /* --- inicio  media 320px sucursales.html --- */
+  .nuestras-sucursales h1 {
     font-size: 42px;
-}
-
-.imgSucursal img
-{
+  }
+  .tarjetas-sucursales .sucursal .imgSucursal img {
     width: 100%;
     height: 300px;
-}
-
-.sucursal p 
-{
-    font-size: 20px;
-}
-
-.infoSucursal span
-{
-    font-size: 20px;
-}
-
-.sucursal iframe
-{
-    width: 210px;
-}
-
-.infoSucursal h3
-{
+  }
+  .tarjetas-sucursales .sucursal p {
+    font-size: 18px;
+  }
+  .tarjetas-sucursales .sucursal .infoSucursal span {
+    font-size: 100%;
+  }
+  .tarjetas-sucursales .sucursal .infoSucursal h3 {
     font-size: 25px;
-}
-
-.infoSucursal span, .infoSucursal p
-{
+  }
+  .tarjetas-sucursales .sucursal .infoSucursal span {
     padding-left: 10px;
-}
-
-.infoSucursal .nombredato
-{
+  }
+  .tarjetas-sucursales .sucursal .infoSucursal p {
     padding-left: 10px;
+  }
+  .tarjetas-sucursales .sucursal .infoSucursal .nombredato {
+    padding-left: 10px;
+  }
+  .tarjetas-sucursales .sucursal .direccionSucursal iframe {
+    width: 250px;
+  }
+}
+/* --------- inicio de footer ---------- */
+.pie-de-pagina {
+  background-color: #0B0C0C;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.pie-de-pagina h3 {
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  color: white;
+  border-bottom: 2px solid #FBE134;
+  border-radius: 2px;
+  font-weight: bold;
+}
+.pie-de-pagina .logo-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 12px;
+}
+.pie-de-pagina .logo-footer img {
+  padding-bottom: 10px;
+  margin-left: 10px;
+  height: 100px;
+  width: 160px;
+}
+.pie-de-pagina .logo-footer span {
+  font-size: 13px;
+  padding: 13px 0 0 13px;
+  color: white;
+}
+.pie-de-pagina .links-rapidos {
+  display: flex;
+  flex-direction: column;
+}
+.pie-de-pagina .links-rapidos ul {
+  margin-left: -2rem;
+  /* unica forma de sacar el estilo agregado x bootstrap que me tiraba
+  los links muy a la derecha*/
+}
+.pie-de-pagina .links-rapidos ul li {
+  display: flex;
+  justify-content: start;
+  margin-left: 5px;
+}
+.pie-de-pagina .links-rapidos ul li a {
+  color: #FBE134;
+  font-size: 20px;
+  padding: 6px;
+  text-decoration: none;
+}
+.pie-de-pagina .links-rapidos ul li a:hover {
+  color: #bba200;
+  transition: 0.1s;
+}
+.pie-de-pagina .contacto {
+  display: flex;
+  flex-direction: column;
+}
+.pie-de-pagina .contacto h3 {
+  display: flex;
+  justify-content: end;
+  margin-right: 30px;
+}
+.pie-de-pagina .contacto a {
+  color: white;
+  justify-content: end;
+  display: flex;
+  margin-top: 9px;
+  padding-bottom: 5px;
+  margin-right: 17px;
+  font-size: 15px;
+  text-decoration: none;
+}
+.pie-de-pagina .redesSociales {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+.pie-de-pagina .redesSociales i {
+  padding: 10px 15px 0 0;
+  color: #FBE134;
+}
+.pie-de-pagina .redesSociales i:hover {
+  color: white;
+  transition: 0.2s;
 }
 
-/* --- fin de media320px de sucursales.html --- */
-
+/* --------- inicio media 768px footer ---------- */
+@media (max-width: 768px) {
+  .pie-de-pagina {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .pie-de-pagina h3 {
+    font-size: 40px;
+    border-style: none;
+    padding-left: 20px;
+    padding-top: 40px;
+  }
+  .pie-de-pagina .logo-footer {
+    display: flex;
+    padding-top: 100px;
+  }
+  .pie-de-pagina .logo-footer img {
+    height: 100px;
+    width: 200px;
+  }
+  .pie-de-pagina .logo-footer span {
+    font-size: 17px;
+    padding: 13px 0 30px 10px;
+  }
+  .pie-de-pagina .links-rapidos {
+    padding-top: 50px;
+  }
+  .pie-de-pagina .links-rapidos li {
+    padding-left: 20px;
+    font-size: 25px;
+  }
+  .pie-de-pagina .contacto .telDirecciones {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .pie-de-pagina .contacto .telDirecciones span a {
+    padding-left: 27px;
+    font-size: 20px;
+  }
+  .pie-de-pagina .contacto i {
+    margin-top: 30px;
+    font-size: 50px;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
