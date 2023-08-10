@@ -214,9 +214,10 @@
   height: 750px;
 }
 .sucursal img {
-  padding-left: 30px;
+  margin-left: 30px;
   width: 600px;
   height: 570px;
+  border: 4px solid #FBE134;
 }
 .sucursal iframe {
   width: 200px;
@@ -633,7 +634,7 @@
   .nuestras-sucursales .sucursal .imgSucursal img {
     width: 100%;
     height: 600px;
-    padding-left: 0px;
+    margin: 0px;
   }
   .nuestras-sucursales .sucursal .infoSucursal {
     width: 100%;
